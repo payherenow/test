@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popova7189</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; }
+  
+  .telegram-button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #1da1f2, #00c6ff);
+  color: #ffffff;
+  text-align: center;
+  padding: 18px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 12px 0;
+  box-shadow: 0 8px 20px rgba(0, 140, 255, 0.35);
+}
+  
+.telegram-button:active {
+  transform: scale(0.97);
+}
+
+
+body {
+  margin: 0;
+  background: #454545;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 6px 0 0;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.card {
+  background: #1c1c1c;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.value {
+  font-size: 15px;
+  margin-top: 6px;
+  word-break: break-all;
+}
+
+.copy-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #257866;
+  color: #FAF9F6;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.copy-btn:active {
+  transform: scale(0.98);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1c1c1c;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 10px;
+}
+
+.contact span {
+  font-size: 15px;
+}
+  
+.telegram-button {
+  display: block;
+  width: 100%;
+  background: #0088cc;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 12px 0;
+}
+
+.telegram-button:active {
+  transform: scale(0.98);
+}
+
+.footer-note {
+  background: #1c1c1c;
+  border-left: 4px solid #e74c3c;
+  padding: 14px;
+  border-radius: 10px;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+  .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.telegram-btn {
+  background: #0088cc;
+  color: #ffffff;
+}
+
+.viber-btn {
+  background: #7360f2;
+  color: #ffffff;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+  
+  .viber-note {
+  text-align: center;
+  font-size: 14px;
+  color: #b0b0b0;
+  margin-top: -6px;
+  margin-bottom: 12px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn svg {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.btn-text {
+  text-align: left;
+}
+
+.btn-title {
+  font-size: 16px;
+}
+
+.btn-sub {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+/* VIBER */
+.viber-btn {
+  background: #7360f2;
+  color: #ffffff;
+}
+
+/* АКТИВНИЙ СТАН */
+.btn:active {
+  background: #4db8ff;
+  transform: scale(0.97);
+}
+
+/* СТАН "СКОПІЙОВАНО" */
+.btn.copied {
+  background: #2ecc71 !important;
+}
+  
+.info-btn {
+  background: #008260;
+  color: #ffffff;
+  border: 1px solid #2ecc71;
+}
+  
+/* HOVER-ЕФЕКТ (для ПК та браузера) */
+@media (hover: hover) {
+  .btn:hover {
+    filter: brightness(1.15);
+    transform: translateY(-1px);
+  }
+}
+/* ===== KORONA AMAZONA DESIGN ===== */
+
+body {
+  background:
+    radial-gradient(ellipse at top, #49301f 0%, transparent 55%),
+    linear-gradient(145deg, #111111, #24201d, #111111) !important;
+  color: #ffffff;
+}
+
+/* Основний контейнер */
+.container {
+  max-width: 460px;
+  padding: 24px 20px;
+}
+
+/* Заголовок */
+.header {
+  margin-bottom: 28px;
+  padding-top: 15px;
+}
+
+.header h1 {
+  color: #ffab49;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  color: #c5b9ae;
+  letter-spacing: 1px;
+}
+
+/* Картки */
+.card {
+  background: linear-gradient(145deg, #292522, #1d1a18);
+  border: 1px solid #57402e;
+  border-radius: 19px;
+  padding: 19px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  margin-bottom: 17px;
+}
+
+/* Заголовки карток */
+.card-title {
+  color: #ffb45c;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* Кнопки реквізитів */
+.info-btn {
+  background: linear-gradient(135deg, #ffb34f, #f07819) !important;
+  color: #17120e !important;
+  border: 1px solid #ffc477 !important;
+  border-radius: 17px;
+  box-shadow: 0 5px 18px rgba(255,137,35,0.20);
+}
+
+/* Текст кнопок */
+.info-btn .btn-title {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.info-btn .btn-sub {
+  color: #422713;
+  font-weight: 600;
+}
+
+/* Ефект наведення */
+@media (hover: hover) {
+  .info-btn:hover {
+    filter: brightness(1.12);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(255,137,35,0.35);
+  }
+}
+
+/* Натискання */
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Успішне копіювання */
+.btn.copied {
+  background: linear-gradient(135deg, #37c978, #159b55) !important;
+  color: white !important;
+}
+
+/* Telegram */
+.telegram-btn {
+  background: linear-gradient(135deg, #229ed9, #087bb5) !important;
+  color: white !important;
+  border-radius: 16px;
+}
+
+/* Viber */
+.viber-btn {
+  background: linear-gradient(135deg, #8170ed, #6048c9) !important;
+  color: white !important;
+  border-radius: 16px;
+}
+
+/* Нижнє повідомлення */
+.footer-note {
+  background: #29221d;
+  border: 1px solid #63432b;
+  border-left: 4px solid #ff922e;
+  border-radius: 14px;
+  color: #d2c5b9;
+}
+
+/* Плавність */
+.btn, .card {
+  transition: all 0.25s ease;
+}
+
+/* Мобільна версія */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+}
+/* ===== GOLDEN CROWN ===== */
+
+.crown-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  animation: crownFloat 3s ease-in-out infinite;
+  filter:
+    drop-shadow(0 0 8px rgba(255, 159, 45, 0.55))
+    drop-shadow(0 5px 12px rgba(255, 120, 20, 0.3));
+}
+
+@keyframes crownFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+/* ===== ORANGE BUTTON GLOW ===== */
+
+.info-btn {
+  background: linear-gradient(
+    135deg,
+    #ffb64c,
+    #f07819
+  ) !important;
+
+  color: #21150b !important;
+  border: 1px solid #ffc477 !important;
+
+  box-shadow:
+    0 0 8px rgba(255, 145, 35, 0.25),
+    0 5px 18px rgba(255, 120, 20, 0.2);
+
+  animation: orangeGlow 3s ease-in-out infinite;
+}
+
+@keyframes orangeGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 8px rgba(255, 145, 35, 0.2),
+      0 5px 15px rgba(255, 120, 20, 0.15);
+  }
+
+  50% {
+    box-shadow:
+      0 0 17px rgba(255, 145, 35, 0.4),
+      0 5px 25px rgba(255, 120, 20, 0.3);
+  }
+}
+
+/* ===== CARD DESIGN ===== */
+
+.card {
+  background: linear-gradient(
+    145deg,
+    #302720,
+    #1c1917
+  ) !important;
+
+  border: 1px solid rgba(255, 155, 60, 0.25);
+  border-radius: 19px !important;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* ===== HEADER ===== */
+
+.header h1 {
+  color: #ffb45c !important;
+  text-shadow: 0 2px 15px rgba(255, 145, 35, 0.2);
+}
+
+/* ===== BLOCK APPEARANCE ===== */
+
+.container > * {
+  opacity: 0;
+  animation: appearUp 0.7s ease forwards;
+}
+
+.container > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.container > *:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.container > *:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.container > *:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.container > *:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.container > *:nth-child(6) {
+  animation-delay: 0.7s;
+}
+
+.container > *:nth-child(7) {
+  animation-delay: 0.8s;
+}
+
+.container > *:nth-child(8) {
+  animation-delay: 0.9s;
+}
+
+@keyframes appearUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .container > *,
+  .crown-logo,
+  .info-btn {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+  /* КОРОНА */
+.crown-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 12px rgba(255,165,55,.65));
+  animation: crownFloat 3s ease-in-out infinite;
+}
+
+@keyframes crownFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+/* ПОМАРАНЧЕВЕ СВІТІННЯ */
+.btn.info-btn {
+  box-shadow: 0 0 12px rgba(255,145,35,.3),
+              0 5px 20px rgba(255,120,20,.2);
+  animation: buttonGlow 3s ease-in-out infinite;
+}
+
+@keyframes buttonGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(255,145,35,.2);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(255,145,35,.5);
+  }
+}
+
+/* ПОЯВА ЕЛЕМЕНТІВ */
+.container > * {
+  opacity: 0;
+  animation: fadeUp .7s ease forwards;
+}
+
+.container > *:nth-child(1) { animation-delay: .1s; }
+.container > *:nth-child(2) { animation-delay: .25s; }
+.container > *:nth-child(3) { animation-delay: .4s; }
+.container > *:nth-child(4) { animation-delay: .5s; }
+.container > *:nth-child(5) { animation-delay: .6s; }
+.container > *:nth-child(6) { animation-delay: .7s; }
+.container > *:nth-child(7) { animation-delay: .8s; }
+.container > *:nth-child(8) { animation-delay: .9s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .container > *, .crown-logo, .btn.info-btn {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+  /* ===== FIX: ПОВЕРНЕННЯ ПЛАТІЖНИХ КНОПОК ===== */
+/* ===== ПЛАТІЖНІ КНОПКИ: АНІМАЦІЯ ТА КОПІЮВАННЯ ===== */ 
+  .container > button.btn.info-btn:not(:has(.btn-sub br)) { 
+    display: flex !important; 
+    visibility: visible !important;
+    opacity: 1; position: relative; z-index: 5;
+background: linear-gradient(135deg, #ffbd59, #f07819);
+color: #21150b;
+border: 1px solid #ffd08a;
+border-radius: 16px;
+
+box-shadow: 0 0 12px rgba(255,145,35,.3),
+            0 5px 20px rgba(255,120,20,.2);
+
+animation: fadeUp 0.7s ease both !important;
+  }
+    /* Текст кнопок */
+    .container > button.btn.info-btn .btn-title { 
+      color: #21150b !important; 
+      opacity: 1 !important; 
+    }
+.container > button.btn.info-btn .btn-sub { 
+  color: #49301c !important; 
+  opacity: 1 !important; 
+}
+  /* Зелений колір після копіювання */ 
+  .container > button.btn.info-btn.copied { 
+    background: #2ecc71 !important; 
+    border-color: #2ecc71 !important; 
+    color: #ffffff !important; 
+    box-shadow: 0 0 15px rgba(46,204,113,.35) !important; 
+  }
+
+
+/* ===== MYSTIC RUNES / NEON THEME — VISUAL ONLY ===== */
+:root {
+  color-scheme: dark;
+}
+html {
+  min-height: 100%;
+  background: #080713;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse at 50% -8%, rgba(126, 54, 194, .34), transparent 48%),
+    radial-gradient(ellipse at 0% 42%, rgba(0, 224, 207, .12), transparent 38%),
+    radial-gradient(ellipse at 100% 72%, rgba(224, 42, 185, .13), transparent 40%),
+    linear-gradient(160deg, #080713 0%, #111027 48%, #090817 100%) !important;
+  color: #f5efff;
+}
+body::before {
+  content: "ᚠ   ᚢ   ᚦ   ᚨ   ᚱ   ᚲ   ᚷ   ᚹ   ᚺ   ᚾ   ᛁ   ᛃ   ᛇ   ᛈ   ᛉ   ᛊ";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  overflow: hidden;
+  color: rgba(189, 123, 255, .075);
+  font-size: clamp(22px, 5vw, 42px);
+  line-height: 2.8;
+  letter-spacing: .65em;
+  text-align: center;
+  overflow-wrap: anywhere;
+  pointer-events: none;
+  text-shadow: 0 0 18px rgba(174, 92, 255, .18);
+}
+.container {
+  position: relative;
+  z-index: 1;
+}
+.header {
+  padding: 22px 14px 18px;
+  margin: 0 -2px 22px;
+  border: 1px solid rgba(190, 112, 255, .28);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(43, 27, 75, .78), rgba(15, 18, 43, .82));
+  box-shadow: 0 0 28px rgba(145, 63, 255, .16), inset 0 1px rgba(255,255,255,.07);
+}
+.header h1 {
+  color: #f2c6ff !important;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(221, 117, 255, .95), 0 0 25px rgba(154, 73, 255, .7);
+}
+.header p {
+  color: #8ff8e9 !important;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 238, 213, .45);
+}
+.crown-logo {
+  filter: drop-shadow(0 0 9px rgba(225, 130, 255, .8))
+          drop-shadow(0 0 22px rgba(0, 239, 218, .28)) !important;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(32, 25, 58, .96), rgba(13, 19, 43, .97)) !important;
+  border: 1px solid rgba(160, 111, 255, .48) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 9px 28px rgba(0, 0, 0, .36),
+              0 0 18px rgba(132, 69, 255, .13),
+              inset 0 1px rgba(255,255,255,.055) !important;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 16px;
+  right: 16px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(112, 255, 236, .7), rgba(220, 132, 255, .7), transparent);
+}
+.card-title {
+  color: #e7c3ff !important;
+  text-shadow: 0 0 12px rgba(181, 103, 255, .35);
+}
+.value {
+  color: #fff7ff;
+}
+.subtext, .footer-note, .viber-note {
+  color: #c4bddb !important;
+}
+.btn {
+  border-radius: 16px !important;
+  transition: transform .2s ease, box-shadow .25s ease, filter .2s ease;
+}
+.btn.info-btn,
+.container > button.btn.info-btn:not(:has(.btn-sub br)) {
+  background: linear-gradient(120deg, #8b42d9 0%, #c044c7 48%, #087f91 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(205, 165, 255, .9) !important;
+  box-shadow: 0 0 10px rgba(174, 79, 255, .42),
+              0 0 23px rgba(0, 222, 211, .13),
+              inset 0 1px rgba(255,255,255,.22) !important;
+}
+.info-btn .btn-title,
+.container > button.btn.info-btn .btn-title {
+  color: #ffffff !important;
+  text-shadow: 0 1px 8px rgba(0,0,0,.25);
+}
+.info-btn .btn-sub,
+.container > button.btn.info-btn .btn-sub {
+  color: #f4e7ff !important;
+}
+@media (hover: hover) {
+  .btn.info-btn:hover {
+    filter: brightness(1.18) saturate(1.15);
+    box-shadow: 0 0 17px rgba(194, 102, 255, .65),
+                0 0 28px rgba(0, 240, 218, .24) !important;
+  }
+}
+.btn.copied,
+.container > button.btn.info-btn.copied {
+  background: linear-gradient(135deg, #20c982, #087d63) !important;
+  color: #ffffff !important;
+  border-color: #73ffd0 !important;
+  box-shadow: 0 0 18px rgba(32, 220, 151, .55) !important;
+}
+.telegram-btn {
+  background: linear-gradient(120deg, #087dbb, #13b8c7) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(121, 238, 255, .7) !important;
+  box-shadow: 0 0 15px rgba(0, 184, 235, .28);
+}
+.viber-btn {
+  background: linear-gradient(120deg, #6942c8, #a04bd1) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(211, 165, 255, .7) !important;
+  box-shadow: 0 0 15px rgba(158, 86, 255, .3);
+}
+.footer-note {
+  background: linear-gradient(135deg, rgba(42, 29, 65, .96), rgba(17, 25, 48, .96)) !important;
+  border: 1px solid rgba(0, 228, 209, .35) !important;
+  border-left: 4px solid #36e5d2 !important;
+  box-shadow: 0 0 18px rgba(0, 220, 205, .1);
+}
+@keyframes mysticPulse {
+  0%, 100% { filter: drop-shadow(0 0 7px rgba(187, 105, 255, .65)); }
+  50% { filter: drop-shadow(0 0 15px rgba(0, 239, 218, .7)); }
+}
+.crown-logo {
+  animation: crownFloat 3s ease-in-out infinite, mysticPulse 4s ease-in-out infinite !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .crown-logo { animation: none !important; }
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="crown-logo">
+  <svg viewBox="0 0 100 85" width="82" height="70"
+       xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="crownGold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#fff2b0"/>
+        <stop offset="45%" stop-color="#ffbd50"/>
+        <stop offset="100%" stop-color="#d66b13"/>
+      </linearGradient>
+    </defs>
+    <path d="M10 65 L4 20 L30 39 L50 5 L70 39 L96 20 L90 65 Z"
+          fill="url(#crownGold)" stroke="#ffe0a0" stroke-width="2"/>
+    <path d="M10 72 H90 L85 81 H15 Z" fill="#c96a17"/>
+    <circle cx="4" cy="17" r="5" fill="#fff1b0"/>
+    <circle cx="50" cy="5" r="5" fill="#fff1b0"/>
+    <circle cx="96" cy="17" r="5" fill="#fff1b0"/>
+  </svg>
+</div>
+    <h1>POPOVA7189</h1>
+    <p>КОСМЕТИКА • ДОГЛЯД • КРАСА</p>
+  </div>
+
+  <!-- PAYMENT -->
+  <div class="card">
+    <div class="card-title">💎 Реквізити для оплати:</div>
+    <div class="value">ФОП Попова Юлія Володимирівна</div>
+    <div class="subtext" style="margin-top:8px;">⬇️ Скопіюйте для оплати ⬇️</div>
+  </div>
+
+<button class="btn info-btn"
+        onclick="copyWithFeedback(this, 'UA243052990000026005025905683')">
+  <div class="btn-text">
+    <div class="btn-title">💳СКОПІЮВАТИ IBAN</div>
+    <div class="btn-sub">UA243052990000026005025905683</div>
+  </div>
+</button>
+
+<button class="btn info-btn"
+        onclick="copyWithFeedback(this, '3251415364')">
+  <div class="btn-text">
+    <div class="btn-title">🏢СКОПІЮВАТИ ЄДРПОУ</div>
+    <div class="btn-sub">3251415364</div>
+  </div>
+</button>
+
+<button class="btn info-btn"
+        onclick="copyWithFeedback(this, 'Оплата за товар')">
+  <div class="btn-text">
+    <div class="btn-title">📝СКОПІЮВАТИ ПРИЗНАЧЕННЯ</div>
+    <div class="btn-sub">Оплата за товар</div>
+  </div>
+</button>
+
+  <!-- AFTER PAYMENT -->
+  <div class="card">
+    <div class="card-title">📦 Після оплати:</div>
+    <div class="subtext">
+      Надішліть менеджеру скріншот квитанції про успішну оплату та заповніть шаблон:
+    </div>
+
+<button class="btn info-btn"
+        onclick="copyWithFeedback(this,
+'👤 ПІБ:\n📍 Населений пункт:\n📦 Відділення НП:\n📱 Телефон отримувача:')">
+
+  <div class="btn-text">
+    <div class="btn-title">🤝СКОПІЮВАТИ ШАБЛОН</div>
+    <div class="btn-sub">
+      👤 ПІБ<br>
+      📍 Населений пункт<br>
+      📦 Відділення НП<br>
+      📱 Телефон отримувача
+    </div>
+  </div>
+</button>
+
+  <!-- CONTACT -->
+<div class="card">
+  <div class="card-title">📞 Звʼязок з магазином:</div>
+
+  <!-- TELEGRAM MANAGER -->
+  <a href="https://t.me/popova_juliaa"
+     target="_blank"
+     class="btn telegram-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+    ТЕЛЕГРАМ МЕНЕДЖЕР
+  </a>
+
+  <!-- VIBER COPY -->
+<button class="btn viber-btn"
+        onclick="copyWithFeedback(this, '+380932800124')">
+  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+<path fill="#fff" d="M24,5C21.361,5,13.33,5,8.89,9.054C6.246,11.688,5,15.494,5,21v3c0,5.506,1.246,9.312,3.921,11.976 c1.332,1.215,3.148,2.186,5.368,2.857L15,39.047v5.328C15,45,15.181,45,15.241,45c0.123,0,0.32-0.039,0.694-0.371 c0.09-0.089,0.75-0.803,3.96-4.399l0.324-0.363l0.485,0.031C21.779,39.965,22.888,40,24,40c2.639,0,10.67,0,15.11-4.055 C41.753,33.311,43,29.505,43,24v-3c0-5.506-1.246-9.312-3.921-11.976C34.67,5,26.639,5,24,5z"></path><path fill="#7e57c2" d="M33.451 28.854c-1.111-.936-1.624-1.219-3.158-2.14C29.654 26.331 28.68 26 28.169 26c-.349 0-.767.267-1.023.523C26.49 27.179 26.275 28 25.125 28c-1.125 0-3.09-1.145-4.5-2.625C19.145 23.965 18 22 18 20.875c0-1.15.806-1.38 1.462-2.037C19.718 18.583 20 18.165 20 17.816c0-.511-.331-1.47-.714-2.109-.921-1.535-1.203-2.048-2.14-3.158-.317-.376-.678-.548-1.056-.549-.639-.001-1.478.316-2.046.739-.854.637-1.747 1.504-1.986 2.584-.032.147-.051.295-.057.443-.046 1.125.396 2.267.873 3.234 1.123 2.279 2.609 4.485 4.226 6.455.517.63 1.08 1.216 1.663 1.782.566.582 1.152 1.145 1.782 1.663 1.97 1.617 4.176 3.103 6.455 4.226.958.472 2.086.906 3.2.874.159-.005.318-.023.477-.058 1.08-.238 1.947-1.132 2.584-1.986.423-.568.74-1.406.739-2.046C33.999 29.532 33.827 29.171 33.451 28.854zM34 24c-.552 0-1-.448-1-1v-1c0-4.962-4.038-9-9-9-.552 0-1-.448-1-1s.448-1 1-1c6.065 0 11 4.935 11 11v1C35 23.552 34.552 24 34 24zM27.858 22c-.444 0-.85-.298-.967-.748-.274-1.051-1.094-1.872-2.141-2.142-.535-.139-.856-.684-.718-1.219.138-.534.682-.855 1.219-.718 1.748.453 3.118 1.822 3.575 3.574.139.535-.181 1.08-.715 1.22C28.026 21.989 27.941 22 27.858 22z"></path><path fill="#7e57c2" d="M31,23c-0.552,0-1-0.448-1-1c0-3.188-2.494-5.818-5.678-5.986c-0.552-0.029-0.975-0.5-0.946-1.051 c0.029-0.552,0.508-0.976,1.051-0.946C28.674,14.241,32,17.748,32,22C32,22.552,31.552,23,31,23z"></path><path fill="#7e57c2" d="M24,4C19.5,4,12.488,4.414,8.216,8.316C5.196,11.323,4,15.541,4,21c0,0.452-0.002,0.956,0.002,1.5 C3.998,23.043,4,23.547,4,23.999c0,5.459,1.196,9.677,4.216,12.684c1.626,1.485,3.654,2.462,5.784,3.106v4.586 C14,45.971,15.049,46,15.241,46h0.009c0.494-0.002,0.921-0.244,1.349-0.624c0.161-0.143,2.02-2.215,4.042-4.481 C21.845,40.972,22.989,41,23.999,41c0,0,0,0,0,0s0,0,0,0c4.5,0,11.511-0.415,15.784-4.317c3.019-3.006,4.216-7.225,4.216-12.684 c0-0.452,0.002-0.956-0.002-1.5c0.004-0.544,0.002-1.047,0.002-1.5c0-5.459-1.196-9.677-4.216-12.684C35.511,4.414,28.5,4,24,4z M41,23.651l0,0.348c0,4.906-1.045,8.249-3.286,10.512C33.832,38,26.437,38,23.999,38c-0.742,0-1.946-0.001-3.367-0.1 C20.237,38.344,16,43.083,16,43.083V37.22c-2.104-0.505-4.183-1.333-5.714-2.708C8.045,32.248,7,28.905,7,23.999l0-0.348 c0-0.351-0.001-0.73,0.002-1.173C6.999,22.078,6.999,21.7,7,21.348L7,21c0-4.906,1.045-8.249,3.286-10.512 C14.167,6.999,21.563,6.999,24,6.999c2.437,0,9.832,0,13.713,3.489c2.242,2.263,3.286,5.606,3.286,10.512l0,0.348 c0,0.351,0.001,0.73-0.002,1.173C41,22.922,41,23.3,41,23.651z"></path>
+</svg>
+  <div class="btn-text">
+    <div class="btn-title">СКОПІЮВАТИ VIBER</div>
+    <div class="btn-sub">+380 93 280 01 24</div>
+  </div>
+</button>
+
+  <!-- TELEGRAM CHANNEL -->
+  <a href="https://t.me/popova7189"
+     target="_blank"
+     class="btn telegram-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+    ТЕЛЕГРАМ КАНАЛ
+  </a>
+</div>
+
+  <!-- TIKTOK NOTE -->
+  <div class="footer-note">
+    Для користувачів TikTok:  
+    якщо кнопки «Відкрити» або «Скопіювати» не працюють —  
+    натисніть три крапки вгорі праворуч → «Відкрити в браузері».
+  </div>
+  
+</div>
+
+<script>
+function copyWithFeedback(button, text) {
+  navigator.clipboard.writeText(text);
+
+  const originalHTML = button.innerHTML;
+  button.classList.add('copied');
+  button.innerHTML = 'Скопійовано ✓';
+
+  setTimeout(() => {
+    button.innerHTML = originalHTML;
+    button.classList.remove('copied');
+  }, 1500);
+}
+</script>
+
+</body>
+</html>
